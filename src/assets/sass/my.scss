@@ -221,6 +221,7 @@ a {
 	}
 }
 .tarrifs {
+	margin-bottom: 40px;
 	padding: 28px 14px 14px;
 	color: white;
 	background: linear-gradient(90deg, #4393D1, #3267B7);
@@ -264,5 +265,29 @@ a {
 				line-height: 1.6;
 			}
 		}
+	}
+}
+.dispetcher {
+	position: relative;
+	padding: 40px 20px 40px 40px;
+	border: 1px solid $blue-bayoux;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 25px;
+		height: 100%;
+		background: $blue-bayoux;
+	}
+	&__title {
+		margin-bottom: 20px;
+		font-size: 16px;
+		text-transform: uppercase;
+		color: $blue-bayoux;
+	}
+	p {
+		font-size: 14px;
+		color: $blue-bayoux;
 	}
 }
