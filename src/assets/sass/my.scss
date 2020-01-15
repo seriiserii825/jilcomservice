@@ -220,3 +220,49 @@ a {
 		color: #CC676B;
 	}
 }
+.tarrifs {
+	padding: 28px 14px 14px;
+	color: white;
+	background: linear-gradient(90deg, #4393D1, #3267B7);
+	&__content {
+		padding: 0 20px 20px 20px;
+		border-left: 1px solid white;
+		border-right: 1px solid white;
+		border-bottom: 1px solid white;
+	}
+	&__title {
+		position: relative;
+		top: -14px;
+		text-align: center;
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			top: 14px;
+			width: 26px;
+			height: 1px;
+			background: #fff;
+		}
+		&::before {
+			left: -20px;
+		}
+		&::after {
+			right: -20px;
+		}
+	}
+	&__list {
+		li {
+			margin-bottom: 80px;
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+			h4 {
+				margin-bottom: 20px;
+			}
+			p {
+				font-size: 14px;
+				line-height: 1.6;
+			}
+		}
+	}
+}
