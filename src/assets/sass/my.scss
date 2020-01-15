@@ -81,6 +81,9 @@ a {
 }
 .main-menu {
 	display: flex;
+	li:last-of-type a {
+		border: none;
+	}
 	a {
 		display: block;
 		padding: 18px 20px;
@@ -172,5 +175,48 @@ a {
 	span {
 		font-size: 14px;
 		color: #888;
+	}
+}
+.main-wrap {
+	display: flex;
+}
+.main-content {
+	flex: 1;
+	padding: 25px 40px 25px 25px;
+}
+.banner {
+	margin-bottom: 40px;
+}
+.features {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 40px;
+	&__item {
+		display: flex;
+		align-items: center;
+		padding: 0 24px;
+		border-right: 2px solid #ccc;
+		&:last-of-type {
+			border: none;
+		}
+		img {
+			margin-right: 16px;
+		}
+	}
+}
+.sidebar {
+	flex: 0 0 300px;
+}
+.section {
+	padding: 20px;
+	background: #f8f8f8;
+	&__title {
+		margin-bottom: 10px;
+	}
+	p {
+		font-weight: bold;
+		line-height: 1.6;
+		color: #CC676B;
 	}
 }
